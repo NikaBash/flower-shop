@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="icon" href="data:,">
+      <link rel="stylesheet" href="style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Xanh+Mono:ital@1&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <audio id="myAudio" src="song.mp3" loop = "loop" autoplay = "allowed"></audio>
+      <div class="heading">
+         <h1>Flower shop opening soon!</h1>
+      </div>
+      <button id="myButton" class="play"></button>
+      <div class="container">
+         <div class="left">
+         <div class="flower">
+            <div class="block">
+               <h4 class="days"></h4>
+               <h3>DAYS</h3>
+            </div>
+         </div>
+      </div>
+      <div class="left">
+         <div class="flower">
+            <div class="block">
+               <h4 class="hours"></h4>
+               <h3>HOURS</h3>
+            </div>
+         </div>
+      </div>
+      <div class="right">
+         <div class="flower">
+            <div class="block">
+               <h4 class="minutes"></h4>
+               <h3>MINUTES</h3>
+            </div>
+         </div>
+      </div>
+      <div class="right">
+         <div class="flower">
+            <div class="block">
+               <h4 class="seconds"></h4>
+               <h3>SECONDS</h3>
+            </div>
+         </div>
+      </div>
+      </div>
+      <div class="containers">
+         <div class="item one selected">
+            <h4 class="description">"Mary"</h4>
+            <p class="par">beautiful bouquet of burgundy roses</p>
+            <p class="price">500$</p>
+         </div>
+         <div class="item two">
+            <h4 class="description">"Florence"</h4>
+            <p class="par">delicate bouquet of white and pink roses</p>
+            <p class="price">450$</p>
+         </div>
+         <div class="item three">
+            <h4 class="description">"Eva"</h4>
+            <p class="par">bright bouquet for the most important wedding day</p>
+            <p class="price">600$</p>
+         </div>
+         <div class="item four">
+            <h4 class="description">"Sophia"</h4>
+            <p class="par">bouquet of the most delicate blue peonies</p>
+            <p class="price">395$</p>
+         </div>
+         <div class="item five">
+            <h4 class="description">"Miranda"</h4>
+            <p class="par">wonderful bouquet of Dutch tulips</p>
+            <p class="price">350$</p>
+         </div>
+         <div class="item six">
+            <h4 class="description">"Vivian"</h4>
+            <p class="par">extravagant bouquet in brown and white tones</p>
+            <p class="price">395$</p>
+         </div>
+      </div>
+      <div class="heading">
+         <h2>Send us a mesage!</h2>
+      </div>
+      <form action="https://formspree.io/f/mrgdjwkd" method="POST">
+         <input type="hidden" name="-language" value="en">
+         <div class="heading">
+            <label>
+            Your email:
+            <input class="text-input" type="email" name="email" placeholder="Your email..." required="">
+            </label>
+         </div>
+         <br>
+         <div class="heading">
+            <label>
+            Your message:
+            <textarea class="text-input" name="message" placeholder="Type your massege..." required=""></textarea>
+            </label>
+         </div>
+         <br>
+         <div class="heading">
+            <button class="btn" type="submit">Send</button>
+         </div>
+      </form>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+      <script src="script.js"></script>
+   </body>
+</html>

@@ -1,0 +1,209 @@
+body {
+    background-color: #DEF5E5;
+    background-image: url(7.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+}
+h1 {
+    font-family: 'Xanh Mono', monospace;
+    font-size: 60px;
+    padding: 20px;
+    background-color: #def5e5b0;
+    border-radius: 40px;
+}
+h2 {
+    font-family: 'Xanh Mono', monospace;
+    font-size: 50px;
+    padding: 20px;
+}
+h3 {
+    font-family: 'Xanh Mono', monospace;
+    font-size: 30px;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+.flower {
+    background-color: #def5e5d0;
+    height: 300px;
+    width: 200px;
+    margin-top: 50px; 
+    border-radius: 40px;
+}
+.block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#myButton {
+    margin-left: 100px;
+    border: none;
+}
+.play {
+    width: 100px;
+    height: 100px;
+    background-image: url(play2.png);
+    background-size: contain;
+    border-radius: 20px;
+    background-color: #ffffff00;
+}
+.pause {
+    background-image: url(pause.png);
+    background-color: #ffffff00;
+}
+.days, .hours, .minutes, .seconds {
+    font-size: 40px;
+    font-family: 'Xanh Mono', monospace;
+}
+.description {
+    position: absolute;
+    top: 15px;
+    left: 40px;
+    background-color: #def5e5d0;
+    color: #000000;
+    font-size: 0;
+}
+.containers {
+    display: flex;
+    margin-top: 300px;
+}
+.item {
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Xanh Mono', monospace;
+    flex: 1;
+    margin: 5px;
+    position: relative;
+}
+.par{
+    position: absolute;
+    top: 100px;
+    left: 40px;
+    background-color:  #def5e5d0;
+    color: #000000;
+    font-size: 0;
+}
+.price {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    background-color: #def5e5d0;
+    color: #000000;
+    font-size: 0;
+}
+.selected {
+    flex: 4;
+}
+.selected h4 { 
+    font-size: 40px;
+    transition: all 1s ease-in;
+}
+.selected .par {
+    font-size: 20px;
+    transition: all 1s ease-in;
+}
+.selected .price {
+    font-size: 35px;
+    transition: all 1s ease-in;
+}
+label {
+    font-family: 'Xanh Mono', monospace;
+    font-size: 30px;
+}
+.text-input {
+    background-color: #DEF5E5;
+    border: none;
+    padding: 12px 20px;
+}
+.btn {
+    font-family: 'Xanh Mono', monospace;
+    font-size: 30px;
+    background-color: #8EC3B0;
+    flex: 1;
+}
+.one {
+    background-image: url(1.jpg);
+}.two {
+    background-image: url(2.jpg);
+}
+.three {
+    background-image: url(3.jpg);
+}
+.four {
+    background-image: url(4.jpg);
+}
+.five {
+    background-image: url(5.jpg);
+}
+.six {
+    background-image: url(6.jpg);
+}
+@media all and (max-width: 800px) {
+    .containers {
+        flex-direction: column;
+        height: 100vh;
+        margin-top: 50px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    #myButton {
+        margin-left: 20px;
+    }
+    .flower {
+        border: 3px solid #8EC3B0;
+        height: 250px;
+        width: 150px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    .play {
+        width: 80px;
+        height: 80px;
+        background-color: #ffffff00;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .containers {
+        flex-direction: column;
+        height: 100vh;
+        margin-top: 50px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    #myButton {
+        margin-left: 20px;
+    }
+    .flower {
+        border: 3px solid #8EC3B0;
+        height: 250px;
+        width: 150px;
+        border-radius: 30px;
+    }
+    .play {
+        width: 80px;
+        height: 80px;
+        background-color: #ffffff00;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    .days, .hours, .minutes, .seconds {
+        font-size: 30px;
+    }
+}
+
+
